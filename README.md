@@ -2,7 +2,7 @@
 A simple tool to monitor server health written in Go and web technologies.
 
 ## How does it work?
-It stores health-check api response time in Redis storage every minute for each target (server/endpoint).
+It stores health-check API response time in Redis storage every minute for each API.
 To increase the accuracy, it calls every 20 seconds and updates the result stored in the cache.
 So even if 2 of the calls get failed, we still have a valid response time for that minute.
 

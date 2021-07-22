@@ -113,7 +113,7 @@ func publishError(w http.ResponseWriter, e error) {
 
 func startWorker() {
 	go func() {
-		for range time.Tick(15 * time.Second) {
+		for range time.Tick(20 * time.Second) {
 			for _, t := range targets {
 				go func(s string) {
 					err := call(s)
@@ -128,7 +128,7 @@ func startWorker() {
 
 func call(target string) error {
 	client := http.Client{
-		Timeout: 5 * time.Second,
+		Timeout: 10 * time.Second,
 	}
 	start := time.Now()
 	response, err := client.Get(target)

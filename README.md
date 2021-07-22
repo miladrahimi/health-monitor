@@ -37,5 +37,5 @@ The chart is powered by [Chart.js](https://www.chartjs.org)
 * **[ping-monitor](https://github.com/miladrahimi/ping-monitor)**: A simple tool to monitor server pings
 
 ## License
-PhpRouter is initially created by [Milad Rahimi](https://miladrahimi.com)
+Health Monitor is initially created by [Milad Rahimi](https://miladrahimi.com)
 and released under the [MIT License](http://opensource.org/licenses/mit-license.php).

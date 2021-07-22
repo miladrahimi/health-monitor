@@ -34,7 +34,7 @@ The chart is powered by [Chart.js](https://www.chartjs.org)
 </p>
 
 ## See Also
-* **[ping-monitor](https://github.com/miladrahimi/ping-monitor)**: A simple tool to monitor server pings
+* **[Ping Monitor](https://github.com/miladrahimi/ping-monitor)**: A simple tool to monitor server pings
 
 ## License
 Health Monitor is initially created by [Milad Rahimi](https://miladrahimi.com)

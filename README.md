@@ -3,8 +3,8 @@ A simple tool to monitor server health written in Go and web technologies.
 
 ## How does it work?
 It stores health-check API response time in Redis storage every minute for each API.
-To increase the accuracy, it calls every 20 seconds and updates the result stored in the cache.
-So even if 2 of the calls get failed, we still have a valid response time for that minute.
+To increase the accuracy, it calls each API every 20 seconds and updates the result stored in the storage.
+So even if two of the calls failed, there would be a response time for that minute.
 
 ## Installation
 ```shell
@@ -16,9 +16,9 @@ docker-compose ps
 ```
 
 ## Configuration
-Open `.env` with a text editor and change the available variables.
+Open `.env` with a text editor and change the environment variables.
 
-Available variables:
+Environment variables:
 * **APP_EXPOSED_PORT**: The exposed port for web app
 * **TARGETS**: The comma-separated list of health-check endpoints to call
 * **TIMEZONE**: The timezone!

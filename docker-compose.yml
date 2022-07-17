@@ -21,7 +21,6 @@ services:
   redis:
     image: ghcr.io/getimages/redis:6.2.4-buster
     restart: always
-    command: ["redis-server", "--appendonly", "yes"]
     volumes:
       - ./data:/data
     ports:

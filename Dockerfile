@@ -1,11 +1,11 @@
-FROM ghcr.io/getimages/golang:1.16.6-buster
+FROM ghcr.io/getimages/golang:1.18.4-bullseye
 
 WORKDIR /app
 
-COPY src/ .
+COPY . .
 
-RUN go build -o src/main .
+RUN go build -o ./bin/main ./cmd/hm/main.go
 
 EXPOSE 8585
 
-CMD ["./src/main"]
+CMD ["./bin/main"]

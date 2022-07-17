@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build -o ./bin/main ./cmd/hm/main.go
+RUN go build -o ./cmd/hm/main ./cmd/hm/main.go
 
 EXPOSE 8585
 
-CMD ["./bin/main"]
+CMD ["./cmd/hm/main"]
